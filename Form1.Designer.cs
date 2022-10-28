@@ -28,11 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series7 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series8 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series9 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.a1_lvl = new System.Windows.Forms.NumericUpDown();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
@@ -543,6 +543,7 @@
             // 
             // c4_down
             // 
+            this.c4_down.DecimalPlaces = 3;
             this.c4_down.Location = new System.Drawing.Point(74, 419);
             this.c4_down.Minimum = new decimal(new int[] {
             100,
@@ -556,7 +557,7 @@
             // 
             // c3_down
             // 
-            this.c3_down.DecimalPlaces = 1;
+            this.c3_down.DecimalPlaces = 3;
             this.c3_down.Location = new System.Drawing.Point(74, 393);
             this.c3_down.Minimum = new decimal(new int[] {
             100,
@@ -570,6 +571,7 @@
             // 
             // c2_down
             // 
+            this.c2_down.DecimalPlaces = 3;
             this.c2_down.Location = new System.Drawing.Point(74, 367);
             this.c2_down.Minimum = new decimal(new int[] {
             100,
@@ -583,6 +585,7 @@
             // 
             // c1_down
             // 
+            this.c1_down.DecimalPlaces = 3;
             this.c1_down.Location = new System.Drawing.Point(74, 341);
             this.c1_down.Minimum = new decimal(new int[] {
             100,
@@ -596,6 +599,7 @@
             // 
             // c4_up
             // 
+            this.c4_up.DecimalPlaces = 3;
             this.c4_up.Location = new System.Drawing.Point(139, 419);
             this.c4_up.Minimum = new decimal(new int[] {
             100,
@@ -609,7 +613,7 @@
             // 
             // c3_up
             // 
-            this.c3_up.DecimalPlaces = 1;
+            this.c3_up.DecimalPlaces = 3;
             this.c3_up.Location = new System.Drawing.Point(139, 393);
             this.c3_up.Minimum = new decimal(new int[] {
             100,
@@ -623,6 +627,7 @@
             // 
             // c2_up
             // 
+            this.c2_up.DecimalPlaces = 3;
             this.c2_up.Location = new System.Drawing.Point(139, 367);
             this.c2_up.Minimum = new decimal(new int[] {
             100,
@@ -636,6 +641,7 @@
             // 
             // c1_up
             // 
+            this.c1_up.DecimalPlaces = 3;
             this.c1_up.Location = new System.Drawing.Point(139, 341);
             this.c1_up.Minimum = new decimal(new int[] {
             100,
@@ -693,27 +699,27 @@
             // 
             // chart1
             // 
-            chartArea3.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea3);
-            legend3.Name = "Legend1";
-            this.chart1.Legends.Add(legend3);
+            chartArea1.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chart1.Legends.Add(legend1);
             this.chart1.Location = new System.Drawing.Point(340, -3);
             this.chart1.Name = "chart1";
-            series7.ChartArea = "ChartArea1";
-            series7.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series7.Legend = "Legend1";
-            series7.Name = "A";
-            series8.ChartArea = "ChartArea1";
-            series8.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series8.Legend = "Legend1";
-            series8.Name = "B";
-            series9.ChartArea = "ChartArea1";
-            series9.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series9.Legend = "Legend1";
-            series9.Name = "C";
-            this.chart1.Series.Add(series7);
-            this.chart1.Series.Add(series8);
-            this.chart1.Series.Add(series9);
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series1.Legend = "Legend1";
+            series1.Name = "A";
+            series2.ChartArea = "ChartArea1";
+            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series2.Legend = "Legend1";
+            series2.Name = "B";
+            series3.ChartArea = "ChartArea1";
+            series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series3.Legend = "Legend1";
+            series3.Name = "C";
+            this.chart1.Series.Add(series1);
+            this.chart1.Series.Add(series2);
+            this.chart1.Series.Add(series3);
             this.chart1.Size = new System.Drawing.Size(456, 449);
             this.chart1.TabIndex = 37;
             this.chart1.Text = "chart1";

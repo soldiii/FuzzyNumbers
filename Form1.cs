@@ -26,7 +26,7 @@ namespace lab1_II
             if (flag)
                 for(var i = 0; i < a_down.Length - 1; i++)
                 {
-                    if (a_down[i] > a_down[i + 1] || a_up[i] < a_up[i + 1])
+                    if (a_down[i] > a_down[i + 1] || a_up[i] < a_up[i + 1] || a_up[i + 1] < a_down[i + 1])
                     {
                         MessageBox.Show("Условие выпуклости для функции принадлежности переменной A не выполняется");
                         return false;
@@ -35,7 +35,7 @@ namespace lab1_II
             else
                 for (var i = 0; i < b_down.Length - 1; i++)
                 {
-                    if (b_down[i] > b_down[i + 1] || b_up[i] < b_up[i + 1])
+                    if (b_down[i] > b_down[i + 1] || b_up[i] < b_up[i + 1] || b_up[i + 1] < b_down[i + 1])
                     {
                         MessageBox.Show("Условие выпуклости для функции принадлежности переменной B не выполняется");
                         return false;
